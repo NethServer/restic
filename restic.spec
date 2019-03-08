@@ -4,7 +4,16 @@ Version: 0.9.3
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
-Source0: https://github.com/restic/restic/releases/download/v%{version}/restic_%{version}_linux_amd64.bz2
+%ifarch %{arm}
+%define nsarch arm
+%endif
+%ifarch aarch64
+%define nsarch arm64
+%endif
+%ifarch x86_64
+%define nsarch amd64
+%endif
+Source0: https://github.com/restic/restic/releases/download/v%{version}/restic_%{version}_linux_%{nsarch}.bz2
 Source1: https://raw.githubusercontent.com/restic/restic/master/LICENSE
 
 BuildRequires: bzip2
