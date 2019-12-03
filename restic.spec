@@ -1,6 +1,6 @@
 Summary: Restic binary
 Name: restic
-Version: 0.9.3
+Version: 0.9.6
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
@@ -41,6 +41,10 @@ echo %{restic_release} > RESTIC-RELEASE
 %doc RESTIC-RELEASE
 
 %changelog
+* Tue Dec 03 2019 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 0.9.6-1
+- restic: add arm support - NethServer/arm-dev#29
+- Update to upstream 0.9.6 - NethServer/dev#5975
+
 * Tue Nov 27 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 0.9.3-1
 - Update to upstream release 0.9.3
 
