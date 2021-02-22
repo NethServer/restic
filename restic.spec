@@ -41,7 +41,7 @@ echo %{restic_release} > RESTIC-RELEASE
 %doc RESTIC-RELEASE
 
 %changelog
-* Mon Feb 222021 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 0.120-1
+* Mon Feb 22 2021 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 0.12.0-1
 - Update restic to version 0.12 - NethServer/dev#6436
 
 * Fri Jan 29 2021 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 0.11.0-1
